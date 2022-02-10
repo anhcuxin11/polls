@@ -1,0 +1,391 @@
+/*font awesome:https://fontawesome.com/icons?d=gallery&m=free*/
+
+body{
+    background-color: #ffffffef;
+    font-family: Arial, Verdana, sans-serif;
+    margin: 0;
+}
+.column {
+    float: left;
+    padding: 5px;
+    box-sizing: border-box;/*witdh k doi*/
+    }
+/* Left and right column */
+.column.side {
+    width: 84%;
+    }
+
+.column.side h1{
+    text-align: center
+}
+
+.column.side2 {
+    width: 8%;
+    }
+/* Clear floats after the columns */
+.column.sideb1 {
+    width: 15%;
+    }
+
+.column.sideb2 {
+    width: 70%;
+    padding: 0 30px;
+    }
+
+.pleft {
+    background-image: url('csn5.jpg');
+    height:500px; 
+    background-repeat: no-repeat;
+    margin-top: 100px;
+    box-sizing: border-box;
+}
+
+.pright {
+    background-image: url('csn11.jpg');
+    height:500px; 
+    background-repeat: no-repeat;
+    margin-top: 100px;
+    opacity: 0.9;
+}
+
+.column.sideb2 p{
+    padding-left: 50px;
+}
+
+.head1 {
+    background-image: url('11.jpg');
+    color: #FFFFFF;
+  
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .column.side, .column.side2, .column.sideb1, .column.sideb2 {
+        width: 100%;
+    }
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    }
+
+li {
+    float: left;
+    }
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+
+li a:hover {
+    background-color: #111;
+    }
+
+.active {
+    background-color: #4CAF50;
+    }
+
+.content {
+    padding: 0 30px;
+    margin: 0 auto; /*auto giua theo chieu ngang*/  
+}
+
+.home h2{
+    display:inline-block; 
+    font-weight: bold;
+    border-left: 4px solid #0f89ec;
+    padding: 0 5px;
+    margin-left: 20px;
+    color: rgb(20, 238, 92);
+}
+
+.home h3{
+    display:inline-block; 
+    margin-left: 30px;
+    border-bottom: 1px solid #b3d7f5;
+    color: rgb(80, 180, 211);
+}
+
+.poll h2{
+    display:inline-block; 
+    font-weight: bold;
+    border-left: 4px solid #0f89ec;
+    padding: 0 5px;
+    color: rgb(20, 238, 92);
+}
+
+.poll table {
+    margin-top: 50px;
+    width: 100%;
+
+}
+
+.poll table thead {
+    background-color: #ebeef1;
+    border-bottom: 1px solid #d3dae0;
+}
+
+.poll table thead td {
+    padding: 10px;
+    font-weight: bold;
+    color: #767779;
+    font-size: 14px;
+}
+
+.poll table tbody tr {
+    border-bottom: 1px solid #d3dae0;
+}
+
+.poll table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.poll table tbody tr:hover {
+    background-color: #151615;
+}
+
+.poll table tbody tr:hover td {
+    color: #FFFFFF;
+}
+
+.poll table tbody tr:hover td:nth-child(1) {
+    color: #FFFFFF;
+}
+
+.poll table tbody tr td {
+    padding: 10px;
+}
+/*.poll table tbody tr td p::before {
+    counter-increment: section;
+    content: " " counter(section) ": ";  background-color: #fbfcfc;(even)
+    color: #a5a7a9;
+  }*/
+
+.poll table tbody tr td:nth-child(1) {
+    color: #0e1114;
+}
+
+.poll table tbody tr td.actions {
+    padding: 8px;
+    text-align: right;
+}
+
+.poll table tbody tr td.actions .view, .poll table tbody tr td.actions .trash, .poll table tbody tr td.actions .po {
+    display: inline-flex;
+    text-align: right;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 10px 12px;
+    border-radius: 5px;
+}
+
+.poll table tbody tr td.actions .view {
+    background-color: #37b770;
+}
+
+.poll table tbody tr td.actions .view:hover {
+    background-color: #31a364;
+}
+
+.poll table tbody tr td.actions .po {
+    background-color: #37afb7;
+}
+.poll table tbody tr td.actions .po:hover {
+    background-color: #319ca3;
+}
+
+.poll table tbody tr td.actions .trash {
+    background-color: #b73737;
+}
+
+.poll table tbody tr td.actions .trash:hover {
+    background-color: #a33131;
+}
+
+.update h2{
+    display:inline-block; 
+    margin-left: 200px;
+    font-weight: bold;
+    border-left: 4px solid #0f89ec;
+    padding: 0 5px;
+    color: rgb(20, 238, 92);  
+}
+
+.update form {
+    padding: 20px 200px;
+    display: flex;
+    flex-flow: column;
+    width: 500px;
+}
+.update form label {
+    display: inline-flex;
+    width: 100%;
+    padding: 10px 0;
+    margin-right: 25px;
+}
+.update form input, .update form textarea {
+    padding: 10px;
+    width: 100%;
+    margin-right: 25px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+}
+.update form textarea {
+    height: 200px;
+}
+.update form input[type="submit"] {
+    display: block;
+    background-color: #38b673;
+    border: 0;
+    font-weight: bold;
+    font-size: 14px;
+    color: #FFFFFF;
+    cursor: pointer;
+    width: 150px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+.update form input[type="submit"]:hover {
+    background-color: #32a367;
+}
+
+.delete .yesno {
+    display: flex;
+}
+.delete .yesno a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #38b673;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    margin: 15px 10px 15px 0;
+    border-radius: 5px;
+}
+.delete .yesno a:hover {
+    background-color: #32a367;
+}
+
+.vote form {
+    display: flex;
+    flex-flow: column;
+}
+.vote form label {
+    padding-bottom: 10px;
+}
+.vote form input[type="radio"] {
+    transform: scale(1.1);
+}
+.vote form input[type="submit"], .vote form a {
+    display: inline-block;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #38b673;
+    border: 0;
+    font-weight: bold;
+    font-size: 14px;
+    color: #FFFFFF;
+    cursor: pointer;
+    width: 150px;
+    margin-top: 15px;
+}
+.vote form input[type="submit"]:hover, .vote form a:hover {
+    background-color: #32a367;
+}
+.vote form a {
+    text-align: center;
+    text-decoration: none;
+    background-color: #37afb7;
+    margin-left: 5px;
+}
+.vote form a:hover {
+    background-color: #319ca3;
+}
+
+.result .wrapper {
+    display: flex;
+    flex-flow: column;
+}
+.result .wrapper .poll-question {
+    width: 50%;
+    padding-bottom: 5px;
+}
+.result .wrapper .poll-question p {
+    margin: 0;
+    padding: 5px 0;
+}
+.result .wrapper .poll-question p span {
+    font-size: 14px;
+}
+.result .wrapper .poll-question .result-bar {
+    display: flex;
+    height: 25px;
+    min-width: 5%;
+    background-color: #38b673;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login{
+	width: 350px;
+	height: 250px;
+	/*background-color: green;*/
+	text-align: center;
+	border:1px solid grey;
+	border-radius: 10px;
+	margin: auto;
+    margin-top: 150px;
+	background-color: white;
+}
+.submit{
+	width: 250px;
+	height: 40px;
+	border-radius: 5px;
+	border:none;
+	background-color: #167bff;
+	color: white;
+}
+.submit:hover{
+	width: 222px;
+	height: 44px;
+}
+.enter{
+	width: 250px;
+	height: auto;
+	border:1px solid #167bff;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.enter img{
+	width: 20px;
+	vertical-align: middle;;
+}
+.enter input{
+	border:none;
+	outline: none;
+	height: 30px;
+	width: 200px;
+	padding-left: 15px;
+}
+

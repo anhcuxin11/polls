@@ -1,0 +1,24 @@
+width: 100vw;
+height: 100vh;   di voi   align-items: center;
+
+.navtop {
+    background-color: #3f69a8;
+    border: 0;
+    padding: 10px;
+}
+
+table{
+    width: 450px;
+    height: 100px;
+    font-size: 26px; 
+}dang nhap
+
+.home .h2{
+    background-color: #aaf7ce;
+}
+navtop{
+    background-color: #3f69a8;
+}
+1000px:ở giữa
+
+required: kiểm tra và thông báo lỗi
